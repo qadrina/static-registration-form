@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  
+  <div class="container">
+  <header class="header">
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please enter your credentials</p>
+  </header>
+  
+  <form id="survey-form">
+    
+    <!-- NAME -->
+    <div class="form-set">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-detail" placeholder="Enter your name" required />
+    </div>
+    
+    <!-- EMAIL -->
+    <div class="form-set">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-detail" placeholder="Enter your email" required />
+    </div>
+    
+    <!-- PHONE -->
+    <div class="form-set">
+      <label id="number-label" for="number">Phone No.</label>
+      <input type="number" name="phone" id="number" min="0" max="9999999999" class="form-detail" placeholder="ex. 0812345678" />
+    </div>
+    
+    <!-- GENDER -->
+    <div class="form-set">
+        <p>Gender</p>
+        <label>
+          <input name="user-recommend" value="male" type="radio" class="input-radio" checked />Male
+        </label>
+        <label>
+          <input name="user-recommend" value="female" type="radio" class="input-radio" />Female
+        </label>
+    </div>
+
+    <!-- ROLE -->
+    <div class="form-set">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-detail" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">School Student</option>
+        <option value="unistudent">University Student</option>
+        <option value="fulltime">Working Fulltime</option>
+        <option value="Public">Public</option>
+      </select>
+    </div>
+    
+    <!-- COURSE-->
+    <div class="form-set">
+        <p>Choose Course</p>
+        <select id="course" name="course" class="form-detail" required>
+          <option value="" selected="selected">Select course</option>
+        </select>
+      </div>
+
+    <!-- SUBJECT -->
+    <div class="form-set">
+        <p>Choose Subject</p>
+        <select id="subject" name="subject" class="form-detail" required>
+          <option value="" selected="selected">Please select course first</option>
+        </select>
+    </div>
+
+    <!-- SCHEDULE -->
+    <div class="form-set">
+        <p>Choose Schedule</p>
+        <select id="schedule" name="schedule" class="form-detail" required>
+          <option value="" selected="selected">Please select subject first</option>
+        </select>
+    </div>
+        
+    <!-- ACTIVITY
+    <div class="form-set">
+      <p>Choose course</p>
+      <select id="most-like" name="mostLike" class="form-detail" required>
+        <option disabled selected value>Select an option</option>
+        <option value="programming">Programming</option>
+        <option value="msoffice">Microsoft Office</option>
+        <option value="database">Database</option>
+      </select>
+    </div> -->
+    
+    <!-- TEMPAT
+    <div class="form-set">
+      <p>Choose venue</p>
+      <label>
+        <input name="venue" value="male" type="radio" class="input-radio" checked />Jakarta 1
+      </label>
+      <label>
+        <input name="venue" value="female" type="radio" class="input-radio" />Jakarta 2
+      </label>
+    </div> -->
+    
+    <!-- JADWAL
+    <div class="form-set">
+      <p>Choose Course</p>
+      <select id="course" name="course" class="form-detail" required>
+        <option disabled selected value>Select an option</option>
+        <option value="">Week 1 | 08.00 - 12.00</option>
+        <option value="">Week 1 | 13.00 - 17.00</option>
+        <option value="">Week 1 | 18.00 - 21.00</option>
+      </select>
+    </div> -->
+    
+    <!-- PAKE RADIO BUTTON
+    <div class="form-set">
+      <p>Choose schedule available 2</p>
+      <label>
+        <input name="sched" value="week1a" type="radio" class="input-radio" />Week 1 | 08.00 - 12.00
+      </label>
+      <label>
+        <input name="sched" value="week1b" type="radio" class="input-radio" />Week 1 | 13.00 - 17.00
+      </label>
+      <label>
+        <input name="sched" value="week1c" type="radio" class="input-radio" />Week 1 | 18.00 - 21.00
+      </label>
+    </div> -->
+    
+    <!-- BONUS
+    <div class="form-set">
+      <p>What would you like to get from Book Club?</p>
+      <label>
+        <input name="prefer" value="free-ticket" type="checkbox" class="input-checkbox" />Free Book Fair Ticket
+      </label>
+      <label>
+        <input name="prefer" value="book-discount" type="checkbox" class="input-checkbox" />Book Discount Information
+      </label>
+      <label>
+        <input name="prefer" value="competition" type="checkbox" class="input-checkbox" />Literature Competitions Information
+      </label>
+    </div> -->
+    
+    <!-- SUGGESTIONS
+    <div class="form-set">
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+    </div> -->
+    
+    <!-- SUBMIT -->
+    <div class="form-set">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+    
+  </div>
+  
+</html>
